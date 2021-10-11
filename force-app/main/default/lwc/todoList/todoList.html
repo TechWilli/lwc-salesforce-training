@@ -1,0 +1,52 @@
+<template>
+  <lightning-card title={cardTitle}>
+    <div class="slds-var-m-around_medium">
+      <div class="slds-border_bottom slds-var-p-bottom_large slds-var-m-bottom_large add-todo-container">
+        <lightning-input
+          type="text"
+          value={todoText}
+          onchange={handleTodoInputChange}
+          label="Digite uma tarefa:"
+          placeholder="tarefa"
+          class="input-align"
+        ></lightning-input>
+        <lightning-button
+          variant="brand"
+          label="Adicionar"
+          title="Adicionar novo TODO"
+          class="btn-align slds-var-p-left_small"
+          onclick={handleAddTodo}
+        ></lightning-button>
+      </div>
+      <template
+        for:each={todoList}
+        for:item="todo"
+      >
+        <div
+          key={todo}
+          class="slds-box slds-box_x-small slds-var-m-bottom_x-small"
+        >
+          <div class="todo-item-container">
+            <p class="">> {todo}</p>
+            <div>
+              <lightning-icon
+                icon-name="utility:edit"
+                alternative-text="editar"
+                title="editar todo"
+                class="slds-var-m-left_small cursor-pointer"
+                size="xx-small"
+              ></lightning-icon>
+              <lightning-icon
+                icon-name="utility:delete"
+                alternative-text="deletar"
+                title="deletar todo"
+                class="slds-var-m-left_small cursor-pointer"
+                size="xx-small"
+              ></lightning-icon>
+            </div>
+          </div>
+        </div>
+      </template>
+    </div>
+  </lightning-card>
+</template>

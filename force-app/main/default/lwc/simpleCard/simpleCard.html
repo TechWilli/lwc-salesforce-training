@@ -1,0 +1,15 @@
+<template>
+  <lightning-card title={title} icon-name="utility:einstein">
+    <!-- lembrar qu eo for:item é entre "", sempre passar uma key no component abaixo do for -->
+    <template for:each={cardContent} for:item="item">
+      <div key={item.content} class="slds-var-m-around_medium">
+        <template if:true={item.isLink}>
+          <a href={item.href} target="_blank">{item.content}</a>
+        </template>
+        <template if:false={item.isLink}>
+          <p>{item.content}</p>
+        </template>
+      </div>
+    </template>
+  </lightning-card>
+</template>

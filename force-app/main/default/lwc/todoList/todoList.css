@@ -1,0 +1,22 @@
+.add-todo-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.add-todo-container .input-align {
+  flex-basis: 75%;
+}
+
+.add-todo-container .button-align {
+  flex-basis: 25%;
+}
+
+.todo-item-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
