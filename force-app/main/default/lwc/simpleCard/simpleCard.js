@@ -1,7 +1,7 @@
 import { LightningElement, api } from 'lwc';
 
 export default class SimpleCard extends LightningElement {
-  @api title = 'LWC Card'
+  title = 'LWC Card'
   cardContent = [
     {
       content: 'This is a card created with lightning web component',

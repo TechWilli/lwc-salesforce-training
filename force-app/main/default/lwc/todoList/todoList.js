@@ -1,11 +1,11 @@
-import { LightningElement, api, track } from 'lwc';
+import { LightningElement, track } from 'lwc';
 
 export default class TodoList extends LightningElement {
-  @api cardTitle = 'Lista de tarefas'
+  cardTitle = 'Lista de tarefas'
+  todoText = ''
   @track todoList = [
     'estudar LWC'
   ]
-  todoText = ''
 
   handleTodoInputChange(event) {
     this.todoText = event.target.value.trim()

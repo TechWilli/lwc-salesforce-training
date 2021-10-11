@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+}
+
+.container {
+  margin-left: 0.5rem;
+  padding: 1rem;
+}
+
+.price {
+  color: green;
+  font-weight: bold;
+}

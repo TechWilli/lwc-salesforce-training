@@ -1,13 +1,14 @@
 <template>
-    <lightning-card title="HelloWorld"
+    <lightning-card title="Reactive text"
         icon-name="utility:world">
         <div class="slds-var-m-around_medium">
             <lightning-input
                 label="Digite algo para ver a mudança reativa:"
-                value={greeting}
+                value={text}
+                placeholder="digite alguma coisa"
                 onchange={changeHandler}>
             </lightning-input>
-            <p>Texto digitado: {greeting}</p>
+            <p class="slds-var-p-top_small">Texto digitado: {text}</p>
         </div>
     </lightning-card>
 </template>

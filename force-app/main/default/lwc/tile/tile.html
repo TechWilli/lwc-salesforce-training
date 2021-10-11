@@ -1,0 +1,10 @@
+<template>
+    <div class="container">
+        <a onclick={tileClick}>
+            <!-- sldsValidatorIgnoreNextLine -->
+            <div class="title">{product.fields.Name.value}</div>
+            <!-- sldsValidatorIgnoreNextLine -->
+            <img class="product-img" alt="product image" src={product.fields.Picture_URL__c.value}></img>
+        </a>
+    </div>
+</template>
