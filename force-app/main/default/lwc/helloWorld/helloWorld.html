@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="HelloWorld"
+        icon-name="utility:world">
+        <div class="slds-var-m-around_medium">
+            <lightning-input
+                label="Digite algo para ver a mudança reativa:"
+                value={greeting}
+                onchange={changeHandler}>
+            </lightning-input>
+            <p>Texto digitado: {greeting}</p>
+        </div>
+    </lightning-card>
+</template>
